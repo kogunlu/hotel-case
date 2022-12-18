@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../navbar/Navbar'
-import Reservation from '../reservation/Reservation'
-import Rooms from '../rooms/Rooms'
+import Navbar from '../../components/navbar/Navbar'
+import Reservation from '../../components/reservation/Reservation'
+import Rooms from '../../components/rooms/Rooms'
+import Slider from '../../components/slider/Slider'
+
 
 
 
@@ -16,10 +18,12 @@ function Home() {
   },[])
 
 
+
   return (
     <div className=''>
         <Navbar />
         {isReservVis ? <Reservation /> : null }
+        <Slider/>
         <Rooms />
         
     </div>
