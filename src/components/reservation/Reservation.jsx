@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import "../../style.css"
 
 function Reservation() {
 
     const [enterDate, setEnterDate] = useState(new Date())
     const [exitDate, setExitDate] = useState(new Date())
     const [visitorNum, setVisitorNum] = useState(0)
+
+    //this state can be used to take the visitor details in order to make the reservation
     const [visitorDetails, setVisitorDetails] = useState({})
 
     function handleSubmit(e){
@@ -35,8 +38,8 @@ function Reservation() {
 
 
   return (
-    <div className='bg-gray-500 text-white flex flex-col items-center'>
-        <h3 className='w-3/6 text-center border-b-2'>Rezervasyon Yapın</h3>
+    <div className='bg-gray-600 text-white flex flex-col items-center pt-2'>
+        <h3 className='w-3/6 text-center border-b-2 mb-1'>Rezervasyon Yapın</h3>
 
         <form className='w-full flex flex-col items-center justify-center mt-2' onSubmit={e => handleSubmit(e)}>
             <div className='w-full flex flex-col items-center justify-center'>
@@ -44,7 +47,7 @@ function Reservation() {
                 <div className='w-5/6 flex flex-col items-center justify-end'>
                     <label className='text-center'>Giriş tarihi</label>
                     <input 
-                    className='w-full text-black focus:outline-none rounded-lg text-center' 
+                    className='w-full text-black focus:outline-none rounded-lg text-center '
                     type={'date'} 
                     value={enterDate}
                     onChange={e => setEnterDate(e.target.value)}

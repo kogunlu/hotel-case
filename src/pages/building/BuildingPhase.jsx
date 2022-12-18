@@ -3,21 +3,13 @@ import {useNavigate} from "react-router-dom"
 
 function BuildingPhase() {
 
-
-
   const navigate = useNavigate()
 
-  
-
     useEffect(() => {
-      let timer = setTimeout(() => navigate("/"), 5000)
+      let timer = setTimeout(() => navigate("/"), 2000)
   
       return () => clearTimeout(timer)
     },[])
-
-    
-    
-  
 
 
   return (
