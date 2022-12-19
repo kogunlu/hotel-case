@@ -22,14 +22,14 @@ function Home() {
 
 
   return (
-    <>
+    <div className='lg:text-lg'>
         <Navbar />
         {isReservVis ? <Reservation /> : null }
         <Slider/>
         <Rooms />
         <Message />
         <Footer />
-    </>
+    </div>
   )
 }
 

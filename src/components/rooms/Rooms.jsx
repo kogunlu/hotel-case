@@ -19,7 +19,7 @@ function Rooms() {
 
   return (
     <div className='flex flex-col items-center my-5'>
-        <p className='font-bold text-xl text-center '>Odalarımız</p>
+        <p className='font-bold text-xl text-center md:mb-1 '>Odalarımız</p>
         {rooms}
         
     </div>

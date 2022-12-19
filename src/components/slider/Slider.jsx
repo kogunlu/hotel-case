@@ -1,9 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import "./slider.css"
 import {hotelArray} from "./dataSlider"
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill  } from "react-icons/bs";
-import {motion} from "framer-motion"
-import SliderCard from './SliderCard';
 
 
 
@@ -31,7 +29,7 @@ function Slider() {
             src={imageSrc} 
             alt="thumbnail" 
             onClick={() => image(i)}
-            className={index === i ? "active h-12 rounded-lg" : "h-12 rounded-lg" }
+            className={index === i ? "active h-12 md:h-16 lg:h-18 rounded-lg" : "h-12 md:h-16 lg:h-18 rounded-lg" }
             ></img>)
           
         })}
@@ -57,27 +55,31 @@ function Slider() {
 
 
   return (
-    <div className='mt-5 flex flex-col items-center justify-center'>
-      <p className='text-xl font-bold text-center'>Otel Görselleri</p>
-      <div className='w-full relative h-max border-solid border-2 border-slate-200 mb-5 pb-2 rounded-lg'>
-      <img className='mainImg h-10/12 w-full rounded-lg' src={imgs[index]} alt="hotelPicture"></img>
-      <div className='actions'>
-        <button className=' bg-none text-white rounded hover:text-slate-300 focus:outline-none' 
-        onClick={prev}
-        >
-          <BsFillArrowLeftCircleFill />
-        </button>
-        <button className=' bg-none text-white rounded hover:text-slate-300 focus:outline-none' 
-        onClick={next}
-        >
-          <BsFillArrowRightCircleFill />
-        </button>
+    <div className='flex flex-col items-center lg:mt-5'>
 
+      <div className='mt-3 md:w-10/12 lg:w-6/12 flex flex-col items-center justify-center'>
+        <p className='text-xl font-bold text-center'>Otel Görselleri</p>
+        <div className='w-full relative h-max border-solid border-2 border-slate-200 mb-5 pb-2 rounded-lg'>
+        <img className='mainImg w-full rounded-lg' src={imgs[index]} alt="hotelPicture"></img>
+        <div className='actions'>
+          <button className=' bg-none text-white md:text-2xl lg:text-3xl rounded hover:text-slate-300 focus:outline-none' 
+          onClick={prev}
+          >
+            <BsFillArrowLeftCircleFill />
+          </button>
+          <button className=' bg-none text-white md:text-2xl lg:text-3xl rounded hover:text-slate-300 focus:outline-none' 
+          onClick={next}
+          >
+            <BsFillArrowRightCircleFill />
+          </button>
+
+        </div>
+
+        <Thumbnail arr={imgs} image={setIndex} index={index} />
       </div>
-
-      <Thumbnail arr={imgs} image={setIndex} index={index} />
     </div>
   </div>
+    
   )
 }
 

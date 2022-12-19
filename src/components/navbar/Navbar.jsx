@@ -18,12 +18,15 @@ function Navbar() {
 
       </div>
 
-      <div className='w-full h-3/6 flex justify-around pt-1 pb-1 bg-gray-200'>
-        <Link to={"/"} className="border-transparent border-b-2 hover:border-black hover:text-gray-800">Anasayfa</Link>
-        <Link className="border-transparent border-b-2 hover:border-black hover:text-gray-800" to={"/rooms"}>Odalar</Link>
-        <Link className="border-transparent border-b-2 hover:border-black hover:text-gray-800" to={"/gallery"}>Galeri</Link>
-        <Link className="border-transparent border-b-2 hover:border-black hover:text-gray-800" to={"/contact"}>İletişim</Link>
+      <div className='flex justify-center bg-black'>
+      <div className='w-full md:w-10/12 lg:text-xl lg:w-6/12 h-3/6 flex justify-around pt-1 pb-1 bg-black text-white'>
+        <Link to={"/"} className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600">Anasayfa</Link>
+        <Link className="border-transparent border-b-2 hover:border-red-900	 hover:text-red-600" to={"/rooms"}>Odalar</Link>
+        <Link className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600" to={"/gallery"}>Galeri</Link>
+        <Link className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600" to={"/contact"}>İletişim</Link>
       </div>
+      </div>
+      
     </nav>
   )
 }
