@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Message from '../../components/message/Message'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Reservation from '../../components/reservation/Reservation'
@@ -21,13 +22,14 @@ function Home() {
 
 
   return (
-    <div className=''>
+    <>
         <Navbar />
         {isReservVis ? <Reservation /> : null }
         <Slider/>
         <Rooms />
+        <Message />
         <Footer />
-    </div>
+    </>
   )
 }
 

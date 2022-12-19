@@ -9,8 +9,14 @@ function Footer() {
   return (
     <div className='w-full flex flex-col items-center border-t-2 pt-2'>
 
+        <div className='flex flex-col justify-center items-center mb-5'>
+                <h3 className='text-center font-bold text-xl underline underline-offset-8 my-2 '>Hakkımızda</h3>
+                <p className='text-center px-5 text-md'>Otelimiz [XXXX], Ege bölgesinde, İzmir ilinin Alsancak ilçesinde yer almaktadır. Otelimiz, 100 odalı ve 5 yıldızlı bir oteldir.</p>
+
+        </div>
+
         <div className='flex flex-col items-center justify-center'>
-            <p className='text-xl font-bold text-center underline underline-offset-8'>XXX İzmir Hotel</p>
+            <p className='text-xl font-bold text-center underline underline-offset-8'>Bize Ulaşın</p>
 
             <p className='text-md font-normal text-center mt-2'>Akdeniz Mah. Gaziosmanpaşa Bul. No:11111 Alsancak,İzmir, 35210</p>
 
