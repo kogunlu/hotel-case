@@ -2,7 +2,7 @@ import React from 'react'
 
 function RoomCard( { imageSrc, description, name, header } ) {
   return (
-    <div className='w-5/6 md:w-8/12 lg:w-4/12 h-max border-solid border-2 border-slate-200 flex-col items-center justify-center mb-5 rounded-lg'>
+    <div className='w-5/6 md:w-7/12 lg:w-4/12 h-max border-solid border-2 border-slate-200 flex-col items-center justify-center mb-5 rounded-lg'>
         <img className='h-4/6 w-full scale-90 hover:scale-100 ease-in duration-500 rounded-lg ' 
         src={imageSrc} 
         alt={name}></img>

@@ -14,7 +14,7 @@ function Navbar() {
     <nav className='h-1/6 w-full border-solid border-none flex flex-col align-center'>
       <div className='flex flex-col items-center justify-center bg-black pb-2'>
         <Logo />
-        <p className='text-white text-xl text-center font-serif font-bold pt-2 hover:text-red-600 hover:underline hover:underline-offset-4 select-none'>YOUR SECOND HOME</p>
+        <p className='text-white text-xl text-center font-serif font-bold pt-2 select-none'>YOUR SECOND HOME</p>
 
       </div>
 
