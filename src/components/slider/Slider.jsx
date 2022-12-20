@@ -58,8 +58,8 @@ function Slider() {
     <div className='flex flex-col items-center lg:pt-5 bg-gradient-to-b from-white to-gray-50'>
 
       <div className='mt-3 md:w-10/12 lg:w-full flex flex-col items-center justify-center'>
-        <p className='text-xl font-bold text-center'>Otel Görselleri</p>
-        <div className='w-full lg:w-8/12 relative h-max mb-5 pb-2 rounded-t-lg'>
+        <p className='text-xl font-bold text-center lg:text-2xl underline underline-offset-4'>Otel Görselleri</p>
+        <div className='w-full lg:w-8/12 relative h-max py-5 rounded-t-lg'>
         <img className='mainImg w-full rounded-t-lg' src={imgs[index]} alt="hotelPicture"></img>
         <div className='actions'>
           <button className=' bg-none text-white md:text-2xl lg:text-3xl rounded hover:text-slate-300 focus:outline-none' 
