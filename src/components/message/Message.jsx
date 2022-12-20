@@ -3,7 +3,7 @@ import React from 'react'
 
 function Message() {
   return (
-    <div className='w-full  flex justify-center items-center'>
+    <div className='w-full  flex justify-center items-center bg-gray-50'>
         <div className='w-full flex justify-center items-center my-20'>
 
         <div className='w-1/6 lg:w-3/12'>

@@ -1,13 +1,14 @@
 import React from 'react'
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaFax, FaInstagramSquare, FaFacebookF, FaTwitterSquare   } from "react-icons/fa";
+import { TfiInstagram, TfiTwitter } from "react-icons/tfi";
+import { FaFax, FaFacebookF} from "react-icons/fa";
 import { HiMail  } from "react-icons/hi";
 import etbis from "../../pictures/etbis.jpg"
 import tursab from "../../pictures/tursab.png"
 
 function Footer() {
   return (
-    <div className='w-full flex items-center justify-center'>
+    <div className='w-full flex items-center justify-center bg-gradient-to-b from-white to-black pb-5'>
         <div className='w-full flex flex-col items-center border-t-2 pt-2'>
 
             <div className='flex flex-col justify-center items-center mb-5'>
@@ -43,15 +44,15 @@ function Footer() {
                     <div className='w-full flex justify-evenly items-center mt-2 border-t-2 py-3 pt-5 lg:border-none'>
 
                     <a href='#'>
-                        <FaInstagramSquare className='text-2xl lg:text-3xl xl:text-4xl' />
+                        <TfiInstagram className='text-2xl lg:text-3xl xl:text-4xl' />
                     </a>
 
                     <a href='#'>
-                        <FaFacebookF className='text-2xl lg:text-3xl xl:text-4xl' />
+                        <FaFacebookF style={{background: "none"}} className='text-2xl lg:text-3xl xl:text-4xl' />
                     </a>
 
                     <a href='#'>
-                    <FaTwitterSquare className='text-2xl lg:text-3xl xl:text-4xl' />
+                    <TfiTwitter className='text-2xl lg:text-3xl xl:text-4xl' />
                     </a>
 
                     </div>

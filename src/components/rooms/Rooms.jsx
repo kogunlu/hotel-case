@@ -18,7 +18,7 @@ function Rooms() {
     })
 
   return (
-    <div className='flex flex-col items-center my-5'>
+    <div className='flex flex-col items-center py-5 bg-gray-50'>
         <p className='font-bold text-xl text-center md:mb-1 '>Odalarımız</p>
         {rooms}
         

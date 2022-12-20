@@ -22,7 +22,7 @@ function Slider() {
 
   const Thumbnail = ({arr, image, index}) => {
     return (
-      <div className='w-full flex justify-center gap-2 items-center mt-2 '>
+      <div className='w-full flex justify-center gap-2 items-center py-2 border-solid border-l-2 border-r-2 border-b-2 border-slate-200 rounded-b-lg '>
         {arr.map( (imageSrc, i ) => {
           return (<img 
             key={i} 
@@ -55,12 +55,12 @@ function Slider() {
 
 
   return (
-    <div className='flex flex-col items-center lg:mt-5'>
+    <div className='flex flex-col items-center lg:pt-5 bg-gray-50'>
 
-      <div className='mt-3 md:w-10/12 lg:w-6/12 flex flex-col items-center justify-center'>
+      <div className='mt-3 md:w-10/12 lg:w-full flex flex-col items-center justify-center'>
         <p className='text-xl font-bold text-center'>Otel Görselleri</p>
-        <div className='w-full relative h-max border-solid border-2 border-slate-200 mb-5 pb-2 rounded-lg'>
-        <img className='mainImg w-full rounded-lg' src={imgs[index]} alt="hotelPicture"></img>
+        <div className='w-full lg:w-8/12 relative h-max mb-5 pb-2 rounded-t-lg'>
+        <img className='mainImg w-full rounded-t-lg' src={imgs[index]} alt="hotelPicture"></img>
         <div className='actions'>
           <button className=' bg-none text-white md:text-2xl lg:text-3xl rounded hover:text-slate-300 focus:outline-none' 
           onClick={prev}

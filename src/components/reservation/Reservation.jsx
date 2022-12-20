@@ -38,7 +38,7 @@ function Reservation() {
 
 
   return (
-    <div className='w-full bg-white bg-gradient-to-b from-black to-white text-white flex flex-col items-center'>
+    <div className='w-full bg-white bg-gradient-to-b from-black to-white text-white flex flex-col items-center border-b-1'>
         <div className='w-full md:w-10/12 lg:w-6/12  bg-gradient-to-b from-black to-white flex flex-col items-center pt-2'>
             
             <h3 className='w-3/6 text-center border-b-2 mb-1 pt-5'>Rezervasyon Yapın</h3>
@@ -91,7 +91,7 @@ function Reservation() {
                     </div>
                 </div>
 
-                <button className='w-2/6 my-2 flex justify-center items-center text-white hover:text-black hover:underline-offset-2 pb-5' type='submit'>Ara</button>
+                <button className='w-2/6 mt-2 flex justify-center items-center text-white hover:text-black hover:underline-offset-2 pb-5 pt-2' type='submit'>Ara</button>
                 
             </form>
 
