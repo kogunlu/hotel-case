@@ -55,7 +55,7 @@ function Slider() {
 
 
   return (
-    <div className='flex flex-col items-center lg:pt-5 bg-gray-50'>
+    <div className='flex flex-col items-center lg:pt-5 bg-gradient-to-b from-white to-gray-50'>
 
       <div className='mt-3 md:w-10/12 lg:w-full flex flex-col items-center justify-center'>
         <p className='text-xl font-bold text-center'>Otel Görselleri</p>
