@@ -38,33 +38,33 @@ function Footer() {
                 </span>
             </div>
 
-            <div className='w-3/6 flex flex-col lg:flex-row justify-evenly items-center mt-5 py-3 lg:border-t-2'>
+            <div className='w-3/6 flex flex-col lg:flex-row justify-evenly items-center mt-5 py-3 lg:border-t-2 border-black'>
 
                 <div className='w-full md:w-5/6'>
-                    <div className='w-full flex justify-evenly items-center mt-2 border-t-2 py-3 pt-5 lg:border-none'>
+                    <div className='w-full flex justify-evenly items-center mt-2 border-t-2 py-3 pt-5 lg:pt-0 border-black lg:border-none'>
 
                     <a href='#'>
-                        <TfiInstagram className='text-2xl lg:text-3xl xl:text-4xl' />
+                        <TfiInstagram className='text-2xl lg:text-3xl xl:text-4xl hover:text-red-500' />
                     </a>
 
                     <a href='#'>
-                        <FaFacebookF style={{background: "none"}} className='text-2xl lg:text-3xl xl:text-4xl' />
+                        <FaFacebookF style={{background: "none"}} className='text-2xl lg:text-3xl xl:text-4xl hover:text-red-500' />
                     </a>
 
                     <a href='#'>
-                    <TfiTwitter className='text-2xl lg:text-3xl xl:text-4xl' />
+                    <TfiTwitter className='text-2xl lg:text-3xl xl:text-4xl hover:text-red-500' />
                     </a>
 
                     </div>
 
-                    <div className='w-full flex justify-evenly items-center mt-3 border-t-2 pt-4 pb-2'>
+                    <div className='w-full flex justify-evenly items-center mt-3 border-t-2 pt-4 pb-2 border-black'>
                     <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png" alt='visa'/>
                     <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png" alt='mastercard'/>
                     </div>
                 </div>
                 
 
-                <div className='w-full md:w-5/6 lg:w-3/6 flex justify-evenly items-center mt-3 mb-2 border-t-2 py-3 lg:border-none'>
+                <div className='w-full md:w-5/6 lg:w-3/6 flex justify-evenly items-center mt-3 mb-2 border-t-2 py-3 border-black lg:border-none'>
                 <img className='w-2/6' src={etbis} alt='etbis'/>
                 <img className='w-2/6' src={tursab} alt='tursab'/>
                 </div>
