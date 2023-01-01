@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Comments from '../../components/comments/Comments'
 import Message from '../../components/message/Message'
 import Reservation from '../../components/reservation/Reservation'
 import Rooms from '../../components/rooms/Rooms'
@@ -25,6 +26,7 @@ function Home() {
         <Slider/>
         <Rooms />
         <Message />
+        <Comments />
     </div>
   )
 }
