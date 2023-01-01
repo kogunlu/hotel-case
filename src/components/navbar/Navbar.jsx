@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from '../logo/Logo';
 import "../../style.css"
 
@@ -9,6 +9,8 @@ import "../../style.css"
 
 function Navbar() {
 
+  const activeClassName = "border-transparent border-b-2 text-red-600 border-red-900 text-2xl"
+  const passiveClassName = "border-transparent border-b-2 hover:text-red-600"
 
   return (
     <nav className='h-1/6 w-full border-solid border-none flex flex-col align-center'>
@@ -20,10 +22,23 @@ function Navbar() {
 
       <div className='flex justify-center bg-black'>
       <div className='w-full md:w-10/12 lg:text-xl lg:w-6/12 h-3/6 flex justify-around pt-1 pb-1 bg-black text-white'>
-        <Link to={"/"} className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600 hover:text-2xl">Anasayfa</Link>
-        <Link className="border-transparent border-b-2 hover:border-red-900	 hover:text-red-600 hover:text-2xl" to={"/rooms"}>Odalar</Link>
-        <Link className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600 hover:text-2xl" to={"/gallery"}>Galeri</Link>
-        <Link className="border-transparent border-b-2 hover:border-red-900 hover:text-red-600 hover:text-2xl" to={"/contact"}>İletişim</Link>
+        <NavLink 
+        className={({isActive}) => isActive ? activeClassName : passiveClassName }
+        to={"/"} 
+        >Anasayfa</NavLink>
+
+        <NavLink 
+        className={({isActive}) => isActive ? activeClassName : passiveClassName }
+        to={"/rooms"}
+        >Odalar</NavLink>
+
+        <NavLink 
+        className={({isActive}) => isActive ? activeClassName : passiveClassName }
+        to={"/gallery"}>Galeri</NavLink>
+
+        <NavLink 
+        className={({isActive}) => isActive ? activeClassName : passiveClassName } 
+        to={"/contact"}>İletişim</NavLink>
       </div>
       </div>
       
