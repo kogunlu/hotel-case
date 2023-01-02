@@ -2,7 +2,7 @@ import React from 'react'
 
 function MainCommentCard({imageSrc, header, comment, name, isHover}) {
 
-    const classListActive = "px-5 py-2 w-full h-auto flex flex-col items-center justify-between gap-3 rounded-md backdrop-blur-xl z-0 border border-neutral-100 rounded-md md:border-dashed md:border-b-2 md:border-t-0 md:border-l-2 md:border-r-2"
+    const classListActive = "px-5 py-2 w-full h-auto flex flex-col items-center justify-between gap-3 rounded-md backdrop-blur-xl z-20 border border-neutral-100 rounded-md md:border-b-2 md:border-t-0 md:border-l-2 md:border-r-2 shadow-lg"
     const classListPassive = "px-5 py-2 w-full h-auto flex flex-col items-center justify-between gap-3 rounded-md backdrop-blur-xl z-0 md:blur-sm border border-neutral-100 rounded-md md:border-none"
 
   return (

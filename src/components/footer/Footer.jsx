@@ -8,7 +8,7 @@ import tursab from "../../pictures/tursab.png"
 
 function Footer() {
   return (
-    <div className='w-full flex items-center justify-center bg-gradient-to-b from-white to-black pb-5'>
+    <div className='w-full flex items-center justify-center bg-gradient-to-b from-white to-black pb-10 mt-10'>
         <div className='w-full flex flex-col items-center border-t-2 pt-2'>
 
             <div className='flex flex-col justify-center items-center mb-5'>

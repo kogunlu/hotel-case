@@ -24,9 +24,9 @@ function Home() {
     <div className='lg:text-lg'>
         {isReservVis ? <Reservation /> : null }
         <Slider/>
+        <Comments />
         <Rooms />
         <Message />
-        <Comments />
     </div>
   )
 }

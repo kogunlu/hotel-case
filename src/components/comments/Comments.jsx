@@ -12,7 +12,7 @@ function Comments() {
         setIsHover(!isHover)
     }
 
-    const commentCards = comments.map((item, index) => {
+    const commentCards = comments.map((item) => {
       return  (
         <CommentCard
             key={item.visitorName}
@@ -20,6 +20,7 @@ function Comments() {
             comment={item.visitorComment}
             name={item.visitorName}
             header = {item.visitorHeader}
+            isHover={isHover}
             handleHover={handleHover}
         />
       )
@@ -28,13 +29,13 @@ function Comments() {
 
 
   return (
-    <div className='w-full h-full flex flex-col items-center mt-5 mb-16 relative'>
+    <div className='w-full h-full flex flex-col items-center pt-20 relative bg-gray-50'>
         <h2 className='text-2xl font-bold underline underline-offset-4 mb-5 text-center'>Misafirlerimiz Ne Düşünüyor?</h2>
         <div className='w-10/12 flex flex-col md:flex-row justify-evenly'>
              {commentCards}
         </div> 
 
-        <div className='w-10/12 md:absolute bottom-0'>
+        <div className='w-10/12 2xl:w-6/12 md:absolute bottom-0'>
             <MainCommentCard 
             imageSrc={mainComment.visitorImg}
             comment={mainComment.visitorComment}

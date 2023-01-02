@@ -22,7 +22,7 @@ function Slider() {
 
   const Thumbnail = ({arr, image, index}) => {
     return (
-      <div className='w-full flex justify-center gap-2 items-center py-2 border-solid border-l-2 border-r-2 border-b-2 border-slate-200 rounded-b-lg '>
+      <div className='w-full flex justify-center gap-2 items-center py-2 border-solid border-l-2 border-r-2 border-b-2 border-slate-200 rounded-b-lg shadow-md'>
         {arr.map( (imageSrc, i ) => {
           return (<img 
             key={i} 

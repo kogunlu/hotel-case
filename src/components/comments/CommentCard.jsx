@@ -1,11 +1,17 @@
 import React from 'react'
 
-function CommentCard({imageSrc, header, comment, name, handleHover}) {
+function CommentCard({imageSrc, header, comment, name, handleHover, isHover}) {
+
+  const activeClassList = "px-1 py-3 w-full md:w-3/12 h-auto flex flex-col items-center justify-between gap-3 border border-neutral-100 rounded-md hover:border-dotted hover:border-neutral-400 md:hover:-translate-y-4 z-20 hover:z-20 hover:backdrop-blur-xl md:opacity-80 hover:opacity-100 xl:mb-10 2xl:mb-32 hover:shadow-2xl bg-white"
+
+  const passiveClassLisst = "px-1 py-3 w-full md:w-3/12 h-auto flex flex-col items-center justify-between gap-3 border border-neutral-100 rounded-md hover:border-dotted hover:border-neutral-400 md:hover:-translate-y-4 z-0 hover:z-20 hover:backdrop-blur-xl md:opacity-70 hover:opacity-100 xl:mb-10 2xl:mb-32 hover:shadow-2xl bg-gray-50 hover:bg-white"
+
+
   return (
     <div 
     onPointerEnter={() => handleHover()}
     onPointerLeave={() => handleHover()} 
-    className='px-1 py-3 w-full md:w-3/12 h-auto flex flex-col items-center justify-between gap-3 border border-neutral-100 rounded-md hover:border-dotted hover:border-neutral-400 md:hover:-translate-y-4 z-0 hover:z-20 hover:backdrop-blur-xl md:opacity-70 hover:opacity-100 xl:mb-10 2xl:mb-32'>
+    className={isHover ? activeClassList : passiveClassLisst}>
         <div className='flex flex-col justify-between items-center gap-2'>
             <img
             src = {imageSrc}
